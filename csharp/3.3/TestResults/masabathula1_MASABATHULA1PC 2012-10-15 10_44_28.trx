@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="24c578aa-af1e-45a8-b1fb-ec4121d19710" name="masabathula1@MASABATHULA1PC 2012-10-15 10:44:28" runUser="MASABATHULA1PC\masabathula1" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="175bcbfc-9017-4381-a1ec-1c7829ef6736">
+    <Deployment runDeploymentRoot="masabathula1_MASABATHULA1PC 2012-10-15 10_44_28">
+      <DeploymentItem filename="C:\Pandu\GitHub\pubnub-api\csharp\3.3\PubNub-Messaging\bin\Debug\PubNub-Messaging.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-10-15T10:44:28.3151791+05:30" queuing="2012-10-15T10:44:29.2812344+05:30" start="2012-10-15T10:44:29.3622390+05:30" finish="2012-10-15T10:44:42.9300150+05:30" />
+  <ResultSummary outcome="Failed">
+    <Counters total="12" executed="12" passed="10" error="0" failed="2" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ThenItShouldReturnTimeStamp" storage="c:\pandu\github\pubnub-api\csharp\3.3\pubnub-messaging.tests\bin\debug\pubnub-messaging.tests.dll" id="5a785fb0-6dd1-f697-4e8b-79b61e0b2e7a">
+      <Execution id="152b7e38-9391-4d6b-94db-7da6f799eb9b" />
+      <TestMethod codeBase="C:/Pandu/GitHub/pubnub-api/csharp/3.3/PubNub-Messaging.Tests/bin/Debug/PubNub-Messaging.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PubNub_Messaging.Tests.WhenGetRequestServerTime, PubNub-Messaging.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ThenItShouldReturnTimeStamp" />
+    </UnitTest>
+    <UnitTest name="ThenItShouldReturnReceivedMessage" storage="c:\pandu\github\pubnub-api\csharp\3.3\pubnub-messaging.tests\bin\debug\pubnub-messaging.tests.dll" id="aa5ae936-4b91-7628-df52-dad043c5d2d0">
+      <Execution id="4abdbbb3-c468-446d-a9bc-bee350c54055" />
+      <TestMethod codeBase="C:/Pandu/GitHub/pubnub-api/csharp/3.3/PubNub-Messaging.Tests/bin/Debug/PubNub-Messaging.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PubNub_Messaging.Tests.WhenSubscribedToAChannel, PubNub-Messaging.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ThenItShouldReturnReceivedMessage" />
+    </UnitTest>
+    <UnitTest name="ThenPublishKeyShouldBeOverriden" storage="c:\pandu\github\pubnub-api\csharp\3.3\pubnub-messaging.tests\bin\debug\pubnub-messaging.tests.dll" id="9b37bd21-6d08-f4c1-82ba-70abc43d2f80">
+      <Execution id="2c0358e1-d3d2-4fdb-b791-b7667ce07e36" />
+      <TestMethod codeBase="C:/Pandu/GitHub/pubnub-api/csharp/3.3/PubNub-Messaging.Tests/bin/Debug/PubNub-Messaging.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PubNub_Messaging.Tests.WhenAMessageIsPublished, PubNub-Messaging.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ThenPublishKeyShouldBeOverriden" />
+    </UnitTest>
+    <UnitTest name="ThenItShouldGenerateUniqueIdentifier" storage="c:\pandu\github\pubnub-api\csharp\3.3\pubnub-messaging.tests\bin\debug\pubnub-messaging.tests.dll" id="e4e4f833-f4c3-6397-cbd3-ac945ae9faf5">
+      <Execution id="ff1614f1-7747-4564-8a73-4c19cb40b982" />
+      <TestMethod codeBase="C:/Pandu/GitHub/pubnub-api/csharp/3.3/PubNub-Messaging.Tests/bin/Debug/PubNub-Messaging.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PubNub_Messaging.Tests.WhenAMessageIsPublished, PubNub-Messaging.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ThenItShouldGenerateUniqueIdentifier" />
+    </UnitTest>
+    <UnitTest name="ThenSecretKeyShouldBeProvidedOptionally" storage="c:\pandu\github\pubnub-api\csharp\3.3\pubnub-messaging.tests\bin\debug\pubnub-messaging.tests.dll" id="f5c7c269-651b-f04d-a925-f9349b8cba4e">
+      <Execution id="6bb34583-c84b-4cb4-8afc-47aad4236cee" />
+      <TestMethod codeBase="C:/Pandu/GitHub/pubnub-api/csharp/3.3/PubNub-Messaging.Tests/bin/Debug/PubNub-Messaging.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PubNub_Messaging.Tests.WhenAMessageIsPublished, PubNub-Messaging.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ThenSecretKeyShouldBeProvidedOptionally" />
+    </UnitTest>
+    <UnitTest name="ThenItShouldReturnHistoryMessages" storage="c:\pandu\github\pubnub-api\csharp\3.3\pubnub-messaging.tests\bin\debug\pubnub-messaging.tests.dll" id="712cf751-9030-e58c-1aca-273874422d6b">
+      <Execution id="e0e25913-6785-4da5-b35f-21ce27a47120" />
+      <TestMethod codeBase="C:/Pandu/GitHub/pubnub-api/csharp/3.3/PubNub-Messaging.Tests/bin/Debug/PubNub-Messaging.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PubNub_Messaging.Tests.WhenGetRequestHistoryMessages, PubNub-Messaging.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ThenItShouldReturnHistoryMessages" />
+    </UnitTest>
+    <UnitTest name="ThenPublishKeyShouldNotBeEmptyAfterOverriden" storage="c:\pandu\github\pubnub-api\csharp\3.3\pubnub-messaging.tests\bin\debug\pubnub-messaging.tests.dll" id="7fa098a0-febe-975a-9bfc-4927161355d1">
+      <Execution id="bc6aa59e-d15d-4887-861e-cd77a8127986" />
+      <TestMethod codeBase="C:/Pandu/GitHub/pubnub-api/csharp/3.3/PubNub-Messaging.Tests/bin/Debug/PubNub-Messaging.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PubNub_Messaging.Tests.WhenAMessageIsPublished, PubNub-Messaging.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ThenPublishKeyShouldNotBeEmptyAfterOverriden" />
+    </UnitTest>
+    <UnitTest name="ItShouldReturnDetailedHistory" storage="c:\pandu\github\pubnub-api\csharp\3.3\pubnub-messaging.tests\bin\debug\pubnub-messaging.tests.dll" id="b66377bc-5933-58f6-5165-6957609092f9">
+      <Execution id="897c2940-0f00-4ff3-8376-651de81a372d" />
+      <TestMethod codeBase="C:/Pandu/GitHub/pubnub-api/csharp/3.3/PubNub-Messaging.Tests/bin/Debug/PubNub-Messaging.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PubNub_Messaging.Tests.WhenDetailedHistoryIsRequested, PubNub-Messaging.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ItShouldReturnDetailedHistory" />
+    </UnitTest>
+    <UnitTest name="ThenItShouldReturnSuccessCodeAndInfo" storage="c:\pandu\github\pubnub-api\csharp\3.3\pubnub-messaging.tests\bin\debug\pubnub-messaging.tests.dll" id="c8d24aa2-b361-8cda-b55b-ec04dbcd06b0">
+      <Execution id="2773cd8d-9889-45ba-8a71-555ba50784ab" />
+      <TestMethod codeBase="C:/Pandu/GitHub/pubnub-api/csharp/3.3/PubNub-Messaging.Tests/bin/Debug/PubNub-Messaging.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PubNub_Messaging.Tests.WhenAMessageIsPublished, PubNub-Messaging.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ThenItShouldReturnSuccessCodeAndInfo" />
+    </UnitTest>
+    <UnitTest name="ThenItShouldReturnReceivedMessage" storage="c:\pandu\github\pubnub-api\csharp\3.3\pubnub-messaging.tests\bin\debug\pubnub-messaging.tests.dll" id="ac38acda-fdcc-f388-700c-e33101194c29">
+      <Execution id="f3107cbe-34db-4379-b621-ae4491155888" />
+      <TestMethod codeBase="C:/Pandu/GitHub/pubnub-api/csharp/3.3/PubNub-Messaging.Tests/bin/Debug/PubNub-Messaging.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PubNub_Messaging.Tests.WhenAClientIsPresented, PubNub-Messaging.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ThenItShouldReturnReceivedMessage" />
+    </UnitTest>
+    <UnitTest name="IfSSLNotProvidedThenDefaultShouldBeFalse" storage="c:\pandu\github\pubnub-api\csharp\3.3\pubnub-messaging.tests\bin\debug\pubnub-messaging.tests.dll" id="a44284f2-17ef-78bd-fdc6-88e675b08b01">
+      <Execution id="6fd35cc8-0a89-49e9-9a8f-070e305e8559" />
+      <TestMethod codeBase="C:/Pandu/GitHub/pubnub-api/csharp/3.3/PubNub-Messaging.Tests/bin/Debug/PubNub-Messaging.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PubNub_Messaging.Tests.WhenAMessageIsPublished, PubNub-Messaging.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="IfSSLNotProvidedThenDefaultShouldBeFalse" />
+    </UnitTest>
+    <UnitTest name="IfHereNowIsCalledThenItShouldReturnInfo" storage="c:\pandu\github\pubnub-api\csharp\3.3\pubnub-messaging.tests\bin\debug\pubnub-messaging.tests.dll" id="0df82419-b215-0bb5-2789-e45794860234">
+      <Execution id="eb4944d1-89f6-4212-b73c-253c6b71ce40" />
+      <TestMethod codeBase="C:/Pandu/GitHub/pubnub-api/csharp/3.3/PubNub-Messaging.Tests/bin/Debug/PubNub-Messaging.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PubNub_Messaging.Tests.WhenAClientIsPresented, PubNub-Messaging.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="IfHereNowIsCalledThenItShouldReturnInfo" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="ac38acda-fdcc-f388-700c-e33101194c29" executionId="f3107cbe-34db-4379-b621-ae4491155888" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0df82419-b215-0bb5-2789-e45794860234" executionId="eb4944d1-89f6-4212-b73c-253c6b71ce40" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="aa5ae936-4b91-7628-df52-dad043c5d2d0" executionId="4abdbbb3-c468-446d-a9bc-bee350c54055" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c8d24aa2-b361-8cda-b55b-ec04dbcd06b0" executionId="2773cd8d-9889-45ba-8a71-555ba50784ab" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e4e4f833-f4c3-6397-cbd3-ac945ae9faf5" executionId="ff1614f1-7747-4564-8a73-4c19cb40b982" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9b37bd21-6d08-f4c1-82ba-70abc43d2f80" executionId="2c0358e1-d3d2-4fdb-b791-b7667ce07e36" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7fa098a0-febe-975a-9bfc-4927161355d1" executionId="bc6aa59e-d15d-4887-861e-cd77a8127986" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f5c7c269-651b-f04d-a925-f9349b8cba4e" executionId="6bb34583-c84b-4cb4-8afc-47aad4236cee" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a44284f2-17ef-78bd-fdc6-88e675b08b01" executionId="6fd35cc8-0a89-49e9-9a8f-070e305e8559" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b66377bc-5933-58f6-5165-6957609092f9" executionId="897c2940-0f00-4ff3-8376-651de81a372d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5a785fb0-6dd1-f697-4e8b-79b61e0b2e7a" executionId="152b7e38-9391-4d6b-94db-7da6f799eb9b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="712cf751-9030-e58c-1aca-273874422d6b" executionId="e0e25913-6785-4da5-b35f-21ce27a47120" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="f3107cbe-34db-4379-b621-ae4491155888" testId="ac38acda-fdcc-f388-700c-e33101194c29" testName="ThenItShouldReturnReceivedMessage" computerName="MASABATHULA1PC" duration="00:00:00.6725023" startTime="2012-10-15T10:44:29.4282428+05:30" endTime="2012-10-15T10:44:30.5063044+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f3107cbe-34db-4379-b621-ae4491155888">
+    </UnitTestResult>
+    <UnitTestResult executionId="eb4944d1-89f6-4212-b73c-253c6b71ce40" testId="0df82419-b215-0bb5-2789-e45794860234" testName="IfHereNowIsCalledThenItShouldReturnInfo" computerName="MASABATHULA1PC" duration="00:00:00.0178293" startTime="2012-10-15T10:44:30.5103047+05:30" endTime="2012-10-15T10:44:30.5313059+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="eb4944d1-89f6-4212-b73c-253c6b71ce40">
+    </UnitTestResult>
+    <UnitTestResult executionId="4abdbbb3-c468-446d-a9bc-bee350c54055" testId="aa5ae936-4b91-7628-df52-dad043c5d2d0" testName="ThenItShouldReturnReceivedMessage" computerName="MASABATHULA1PC" duration="00:00:10.2291431" startTime="2012-10-15T10:44:30.5343060+05:30" endTime="2012-10-15T10:44:40.7668913+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4abdbbb3-c468-446d-a9bc-bee350c54055">
+      <Output>
+        <DebugTrace>DateTime 10/15/2012 10:44:30 AM, requested subscribe for channel=my_channel
+DateTime 10/15/2012 10:44:30 AM, Request=http://pubsub.pubnub.com/subscribe/demo/my_channel/0/0?uuid=43ad52bc-5db8-4e26-acf8-2cb6fa3a5a5c
+DateTime 10/15/2012 10:44:30 AM, JSON=[[],"13502704154871276"]
+DateTime 10/15/2012 10:44:30 AM, Request=http://pubsub.pubnub.com/subscribe/demo/my_channel/0/13502704154871276?uuid=43ad52bc-5db8-4e26-acf8-2cb6fa3a5a5c
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Assert.IsTrue failed. </Message>
+          <StackTrace>   at PubNub_Messaging.Tests.WhenSubscribedToAChannel.ThenItShouldReturnReceivedMessage() in C:\Pandu\GitHub\pubnub-api\csharp\3.3\PubNub-Messaging.Tests\WhenSubscribedToAChannel.cs:line 32
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2773cd8d-9889-45ba-8a71-555ba50784ab" testId="c8d24aa2-b361-8cda-b55b-ec04dbcd06b0" testName="ThenItShouldReturnSuccessCodeAndInfo" computerName="MASABATHULA1PC" duration="00:00:00.3504091" startTime="2012-10-15T10:44:40.7698915+05:30" endTime="2012-10-15T10:44:41.1239117+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2773cd8d-9889-45ba-8a71-555ba50784ab">
+      <Output>
+        <DebugTrace>DateTime 10/15/2012 10:44:40 AM, Request=http://pubsub.pubnub.com/publish/demo/demo/0/my%2Fchannel/0/%22Pubnub%20API%20Usage%20Example%22
+DateTime 10/15/2012 10:44:41 AM, JSON=[1,"Sent","13502780816893733"]
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ff1614f1-7747-4564-8a73-4c19cb40b982" testId="e4e4f833-f4c3-6397-cbd3-ac945ae9faf5" testName="ThenItShouldGenerateUniqueIdentifier" computerName="MASABATHULA1PC" duration="00:00:00.0008103" startTime="2012-10-15T10:44:41.1349124+05:30" endTime="2012-10-15T10:44:41.1429128+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ff1614f1-7747-4564-8a73-4c19cb40b982">
+    </UnitTestResult>
+    <UnitTestResult executionId="2c0358e1-d3d2-4fdb-b791-b7667ce07e36" testId="9b37bd21-6d08-f4c1-82ba-70abc43d2f80" testName="ThenPublishKeyShouldBeOverriden" computerName="MASABATHULA1PC" duration="00:00:00.1936408" startTime="2012-10-15T10:44:41.1529134+05:30" endTime="2012-10-15T10:44:41.3519248+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2c0358e1-d3d2-4fdb-b791-b7667ce07e36">
+      <Output>
+        <DebugTrace>DateTime 10/15/2012 10:44:41 AM, Request=http://pubsub.pubnub.com/publish/demo/demo/0/my%2Fchannel/0/%22Pubnub%20API%20Usage%20Example%22
+DateTime 10/15/2012 10:44:41 AM, JSON=[1,"Sent","13502780819244506"]
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="bc6aa59e-d15d-4887-861e-cd77a8127986" testId="7fa098a0-febe-975a-9bfc-4927161355d1" testName="ThenPublishKeyShouldNotBeEmptyAfterOverriden" computerName="MASABATHULA1PC" duration="00:00:00.0142111" startTime="2012-10-15T10:44:41.3569251+05:30" endTime="2012-10-15T10:44:41.3729260+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bc6aa59e-d15d-4887-861e-cd77a8127986">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method PubNub_Messaging.Tests.WhenAMessageIsPublished.ThenPublishKeyShouldNotBeEmptyAfterOverriden threw exception: 
+System.MissingFieldException: PUBLISH_KEY cannot be empty for publish</Message>
+          <StackTrace>    at PubNub_Messaging.Pubnub.publish(String channel, Object message, Action`1 usercallback) in C:\Pandu\GitHub\pubnub-api\csharp\3.3\PubNub-Messaging\Pubnub.cs:line 265
+   at PubNub_Messaging.Tests.WhenAMessageIsPublished.ThenPublishKeyShouldNotBeEmptyAfterOverriden() in C:\Pandu\GitHub\pubnub-api\csharp\3.3\PubNub-Messaging.Tests\WhenAMessageIsPublished.cs:line 102
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6bb34583-c84b-4cb4-8afc-47aad4236cee" testId="f5c7c269-651b-f04d-a925-f9349b8cba4e" testName="ThenSecretKeyShouldBeProvidedOptionally" computerName="MASABATHULA1PC" duration="00:00:01.1986664" startTime="2012-10-15T10:44:41.3769262+05:30" endTime="2012-10-15T10:44:42.5789950+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6bb34583-c84b-4cb4-8afc-47aad4236cee">
+      <Output>
+        <DebugTrace>DateTime 10/15/2012 10:44:41 AM, Request=http://pubsub.pubnub.com/publish/demo/demo/0/my%2Fchannel/0/%22Pubnub%20API%20Usage%20Example%22
+DateTime 10/15/2012 10:44:41 AM, JSON=[1,"Sent","13502780821413665"]
+DateTime 10/15/2012 10:44:41 AM, Request=http://pubsub.pubnub.com/publish/demo/demo/d759c756abbd45a9864adc7f2b91393e/my%2Fchannel/0/%22Pubnub%20API%20Usage%20Example%22
+DateTime 10/15/2012 10:44:41 AM, JSON=[1,"Sent","13502780823245915"]
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6fd35cc8-0a89-49e9-9a8f-070e305e8559" testId="a44284f2-17ef-78bd-fdc6-88e675b08b01" testName="IfSSLNotProvidedThenDefaultShouldBeFalse" computerName="MASABATHULA1PC" duration="00:00:00.2066394" startTime="2012-10-15T10:44:42.5899956+05:30" endTime="2012-10-15T10:44:42.8050079+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6fd35cc8-0a89-49e9-9a8f-070e305e8559">
+      <Output>
+        <DebugTrace>DateTime 10/15/2012 10:44:42 AM, Request=http://pubsub.pubnub.com/publish/demo/demo/0/my%2Fchannel/0/%22Pubnub%20API%20Usage%20Example%22
+DateTime 10/15/2012 10:44:42 AM, JSON=[1,"Sent","13502780833679550"]
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="897c2940-0f00-4ff3-8376-651de81a372d" testId="b66377bc-5933-58f6-5165-6957609092f9" testName="ItShouldReturnDetailedHistory" computerName="MASABATHULA1PC" duration="00:00:00.0380723" startTime="2012-10-15T10:44:42.8080081+05:30" endTime="2012-10-15T10:44:42.8490104+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="897c2940-0f00-4ff3-8376-651de81a372d">
+    </UnitTestResult>
+    <UnitTestResult executionId="152b7e38-9391-4d6b-94db-7da6f799eb9b" testId="5a785fb0-6dd1-f697-4e8b-79b61e0b2e7a" testName="ThenItShouldReturnTimeStamp" computerName="MASABATHULA1PC" duration="00:00:00.0161956" startTime="2012-10-15T10:44:42.8520106+05:30" endTime="2012-10-15T10:44:42.8710117+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="152b7e38-9391-4d6b-94db-7da6f799eb9b">
+    </UnitTestResult>
+    <UnitTestResult executionId="e0e25913-6785-4da5-b35f-21ce27a47120" testId="712cf751-9030-e58c-1aca-273874422d6b" testName="ThenItShouldReturnHistoryMessages" computerName="MASABATHULA1PC" duration="00:00:00.0163425" startTime="2012-10-15T10:44:42.8750119+05:30" endTime="2012-10-15T10:44:42.8960131+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e0e25913-6785-4da5-b35f-21ce27a47120">
+    </UnitTestResult>
+  </Results>
+</TestRun>

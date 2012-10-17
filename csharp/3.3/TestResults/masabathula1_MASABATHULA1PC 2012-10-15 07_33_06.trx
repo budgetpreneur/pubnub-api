@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="42c047c9-5e6a-4b15-a2e4-3bda089bbb08" name="masabathula1@MASABATHULA1PC 2012-10-15 07:33:06" runUser="MASABATHULA1PC\masabathula1" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="948de2c1-8f3f-4f0e-962c-178296f2347a">
+    <Deployment runDeploymentRoot="masabathula1_MASABATHULA1PC 2012-10-15 07_33_06">
+      <DeploymentItem filename="C:\Pandu\GitHub\pubnub-api\csharp\3.3\PubNub-Messaging\bin\Debug\PubNub-Messaging.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-10-15T07:33:06.4176375+05:30" queuing="2012-10-15T07:33:07.8060400+05:30" start="2012-10-15T07:33:07.9620403+05:30" finish="2012-10-15T07:34:48.5502238+05:30" />
+  <ResultSummary outcome="Error">
+    <Counters total="6" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="5" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="MASABATHULA1PC" outcome="Error" timestamp="2012-10-15T07:34:48.5482237+05:30">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ThenItShouldGenerateUniqueIdentifier" storage="c:\pandu\github\pubnub-api\csharp\3.3\pubnub-messaging.tests\bin\debug\pubnub-messaging.tests.dll" id="e4e4f833-f4c3-6397-cbd3-ac945ae9faf5">
+      <Execution id="92790028-9824-47f4-968e-33cb7bad0baf" />
+      <TestMethod codeBase="C:/Pandu/GitHub/pubnub-api/csharp/3.3/PubNub-Messaging.Tests/bin/Debug/PubNub-Messaging.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PubNub_Messaging.Tests.WhenAMessageIsPublished, PubNub-Messaging.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ThenItShouldGenerateUniqueIdentifier" />
+    </UnitTest>
+    <UnitTest name="ThenSecretKeyShouldBeProvidedOptionally" storage="c:\pandu\github\pubnub-api\csharp\3.3\pubnub-messaging.tests\bin\debug\pubnub-messaging.tests.dll" id="f5c7c269-651b-f04d-a925-f9349b8cba4e">
+      <Execution id="e647bdcd-1545-4eda-90d2-c14cea22d428" />
+      <TestMethod codeBase="C:/Pandu/GitHub/pubnub-api/csharp/3.3/PubNub-Messaging.Tests/bin/Debug/PubNub-Messaging.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PubNub_Messaging.Tests.WhenAMessageIsPublished, PubNub-Messaging.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ThenSecretKeyShouldBeProvidedOptionally" />
+    </UnitTest>
+    <UnitTest name="ThenPublishKeyShouldNotBeEmptyAfterOverriden" storage="c:\pandu\github\pubnub-api\csharp\3.3\pubnub-messaging.tests\bin\debug\pubnub-messaging.tests.dll" id="7fa098a0-febe-975a-9bfc-4927161355d1">
+      <Execution id="ba95a452-632c-40ea-bc59-e93332a5cd85" />
+      <TestMethod codeBase="C:/Pandu/GitHub/pubnub-api/csharp/3.3/PubNub-Messaging.Tests/bin/Debug/PubNub-Messaging.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PubNub_Messaging.Tests.WhenAMessageIsPublished, PubNub-Messaging.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ThenPublishKeyShouldNotBeEmptyAfterOverriden" />
+    </UnitTest>
+    <UnitTest name="ThenItShouldReturnSuccessCodeAndInfo" storage="c:\pandu\github\pubnub-api\csharp\3.3\pubnub-messaging.tests\bin\debug\pubnub-messaging.tests.dll" id="c8d24aa2-b361-8cda-b55b-ec04dbcd06b0">
+      <Execution id="bd71f0ce-f7fd-455d-ad38-da0274521655" />
+      <TestMethod codeBase="C:/Pandu/GitHub/pubnub-api/csharp/3.3/PubNub-Messaging.Tests/bin/Debug/PubNub-Messaging.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PubNub_Messaging.Tests.WhenAMessageIsPublished, PubNub-Messaging.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ThenItShouldReturnSuccessCodeAndInfo" />
+    </UnitTest>
+    <UnitTest name="IfSSLNotProvidedThenDefaultShouldBeFalse" storage="c:\pandu\github\pubnub-api\csharp\3.3\pubnub-messaging.tests\bin\debug\pubnub-messaging.tests.dll" id="a44284f2-17ef-78bd-fdc6-88e675b08b01">
+      <Execution id="9fc472bc-bddf-41b6-af33-c936e5df9989" />
+      <TestMethod codeBase="C:/Pandu/GitHub/pubnub-api/csharp/3.3/PubNub-Messaging.Tests/bin/Debug/PubNub-Messaging.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PubNub_Messaging.Tests.WhenAMessageIsPublished, PubNub-Messaging.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="IfSSLNotProvidedThenDefaultShouldBeFalse" />
+    </UnitTest>
+    <UnitTest name="ThenPublishKeyShouldBeOverriden" storage="c:\pandu\github\pubnub-api\csharp\3.3\pubnub-messaging.tests\bin\debug\pubnub-messaging.tests.dll" id="9b37bd21-6d08-f4c1-82ba-70abc43d2f80">
+      <Execution id="5516aeef-64cf-4a6b-8cd0-8c8af625f48a" />
+      <TestMethod codeBase="C:/Pandu/GitHub/pubnub-api/csharp/3.3/PubNub-Messaging.Tests/bin/Debug/PubNub-Messaging.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PubNub_Messaging.Tests.WhenAMessageIsPublished, PubNub-Messaging.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ThenPublishKeyShouldBeOverriden" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="7fa098a0-febe-975a-9bfc-4927161355d1" executionId="ba95a452-632c-40ea-bc59-e93332a5cd85" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9b37bd21-6d08-f4c1-82ba-70abc43d2f80" executionId="5516aeef-64cf-4a6b-8cd0-8c8af625f48a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a44284f2-17ef-78bd-fdc6-88e675b08b01" executionId="9fc472bc-bddf-41b6-af33-c936e5df9989" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c8d24aa2-b361-8cda-b55b-ec04dbcd06b0" executionId="bd71f0ce-f7fd-455d-ad38-da0274521655" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e4e4f833-f4c3-6397-cbd3-ac945ae9faf5" executionId="92790028-9824-47f4-968e-33cb7bad0baf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f5c7c269-651b-f04d-a925-f9349b8cba4e" executionId="e647bdcd-1545-4eda-90d2-c14cea22d428" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="ba95a452-632c-40ea-bc59-e93332a5cd85" testId="7fa098a0-febe-975a-9bfc-4927161355d1" testName="ThenPublishKeyShouldNotBeEmptyAfterOverriden" computerName="MASABATHULA1PC" duration="00:01:40.4009832" startTime="2012-10-15T07:33:08.1492406+05:30" endTime="2012-10-15T07:34:48.5502238+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ba95a452-632c-40ea-bc59-e93332a5cd85">
+    </UnitTestResult>
+    <UnitTestResult executionId="5516aeef-64cf-4a6b-8cd0-8c8af625f48a" testId="9b37bd21-6d08-f4c1-82ba-70abc43d2f80" testName="ThenPublishKeyShouldBeOverriden" computerName="MASABATHULA1PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5516aeef-64cf-4a6b-8cd0-8c8af625f48a">
+    </UnitTestResult>
+    <UnitTestResult executionId="9fc472bc-bddf-41b6-af33-c936e5df9989" testId="a44284f2-17ef-78bd-fdc6-88e675b08b01" testName="IfSSLNotProvidedThenDefaultShouldBeFalse" computerName="MASABATHULA1PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9fc472bc-bddf-41b6-af33-c936e5df9989">
+    </UnitTestResult>
+    <UnitTestResult executionId="bd71f0ce-f7fd-455d-ad38-da0274521655" testId="c8d24aa2-b361-8cda-b55b-ec04dbcd06b0" testName="ThenItShouldReturnSuccessCodeAndInfo" computerName="MASABATHULA1PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bd71f0ce-f7fd-455d-ad38-da0274521655">
+    </UnitTestResult>
+    <UnitTestResult executionId="92790028-9824-47f4-968e-33cb7bad0baf" testId="e4e4f833-f4c3-6397-cbd3-ac945ae9faf5" testName="ThenItShouldGenerateUniqueIdentifier" computerName="MASABATHULA1PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="92790028-9824-47f4-968e-33cb7bad0baf">
+    </UnitTestResult>
+    <UnitTestResult executionId="e647bdcd-1545-4eda-90d2-c14cea22d428" testId="f5c7c269-651b-f04d-a925-f9349b8cba4e" testName="ThenSecretKeyShouldBeProvidedOptionally" computerName="MASABATHULA1PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e647bdcd-1545-4eda-90d2-c14cea22d428">
+    </UnitTestResult>
+  </Results>
+</TestRun>

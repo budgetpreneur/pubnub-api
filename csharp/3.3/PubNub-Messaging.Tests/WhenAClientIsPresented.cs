@@ -24,7 +24,7 @@ namespace PubNub_Messaging.Tests
 
             pubnub.PropertyChanged += new PropertyChangedEventHandler(Pubnub_PropertyChanged);
 
-            pubnub.presence(channel);
+            //pubnub.presence(channel);
         }
 
         static void Pubnub_PropertyChanged(object sender, PropertyChangedEventArgs e)
@@ -54,7 +54,7 @@ namespace PubNub_Messaging.Tests
 
             pubnub.PropertyChanged += new PropertyChangedEventHandler(Pubnub_PropertyChanged);
 
-            pubnub.here_now(channel);
+            //pubnub.here_now(channel);
         }
     }
 }

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="ea4d9b67-f3f6-4896-b44b-b16d8d13be02" name="masabathula1@MASABATHULA1PC 2012-10-15 07:22:38" runUser="MASABATHULA1PC\masabathula1" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="6cb24ce4-a797-4549-827e-02c7f332496e">
+    <Deployment runDeploymentRoot="masabathula1_MASABATHULA1PC 2012-10-15 07_22_38">
+      <DeploymentItem filename="C:\Pandu\GitHub\pubnub-api\csharp\3.3\PubNub-Messaging\bin\Debug\PubNub-Messaging.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-10-15T07:22:38.7853236+05:30" queuing="2012-10-15T07:22:40.1269260+05:30" start="2012-10-15T07:22:40.2829263+05:30" finish="2012-10-15T07:23:30.5122868+05:30" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="MASABATHULA1PC" outcome="Error" timestamp="2012-10-15T07:23:30.5122868+05:30">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ThenPublishKeyShouldBeOverriden" storage="c:\pandu\github\pubnub-api\csharp\3.3\pubnub-messaging.tests\bin\debug\pubnub-messaging.tests.dll" id="9b37bd21-6d08-f4c1-82ba-70abc43d2f80">
+      <Execution id="563f86f2-7aa4-49f0-a17a-75506dd1aff1" />
+      <TestMethod codeBase="C:/Pandu/GitHub/pubnub-api/csharp/3.3/PubNub-Messaging.Tests/bin/Debug/PubNub-Messaging.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PubNub_Messaging.Tests.WhenAMessageIsPublished, PubNub-Messaging.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ThenPublishKeyShouldBeOverriden" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="9b37bd21-6d08-f4c1-82ba-70abc43d2f80" executionId="563f86f2-7aa4-49f0-a17a-75506dd1aff1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="563f86f2-7aa4-49f0-a17a-75506dd1aff1" testId="9b37bd21-6d08-f4c1-82ba-70abc43d2f80" testName="ThenPublishKeyShouldBeOverriden" computerName="MASABATHULA1PC" duration="00:00:50.0577602" startTime="2012-10-15T07:22:40.4545266+05:30" endTime="2012-10-15T07:23:30.5122868+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="563f86f2-7aa4-49f0-a17a-75506dd1aff1">
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="4448a353-6ef2-4f09-b954-bb5bfa7664b5" name="masabathula1@MASABATHULA1PC 2012-10-15 07:23:53" runUser="MASABATHULA1PC\masabathula1" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="7587120d-08f7-4c60-9515-a1de970a33f6">
+    <Deployment runDeploymentRoot="masabathula1_MASABATHULA1PC 2012-10-15 07_23_53">
+      <DeploymentItem filename="C:\Pandu\GitHub\pubnub-api\csharp\3.3\PubNub-Messaging\bin\Debug\PubNub-Messaging.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-10-15T07:23:53.8685669+05:30" queuing="2012-10-15T07:23:55.3817695+05:30" start="2012-10-15T07:23:55.5377698+05:30" finish="2012-10-15T07:24:18.8910108+05:30" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ThenPublishKeyShouldBeOverriden" storage="c:\pandu\github\pubnub-api\csharp\3.3\pubnub-messaging.tests\bin\debug\pubnub-messaging.tests.dll" id="9b37bd21-6d08-f4c1-82ba-70abc43d2f80">
+      <Execution id="6f13ca19-9e4c-40b7-85f3-524b2a17e224" />
+      <TestMethod codeBase="C:/Pandu/GitHub/pubnub-api/csharp/3.3/PubNub-Messaging.Tests/bin/Debug/PubNub-Messaging.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PubNub_Messaging.Tests.WhenAMessageIsPublished, PubNub-Messaging.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ThenPublishKeyShouldBeOverriden" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="9b37bd21-6d08-f4c1-82ba-70abc43d2f80" executionId="6f13ca19-9e4c-40b7-85f3-524b2a17e224" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="6f13ca19-9e4c-40b7-85f3-524b2a17e224" testId="9b37bd21-6d08-f4c1-82ba-70abc43d2f80" testName="ThenPublishKeyShouldBeOverriden" computerName="MASABATHULA1PC" duration="00:00:16.3149342" startTime="2012-10-15T07:23:55.7093701+05:30" endTime="2012-10-15T07:24:18.8130107+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6f13ca19-9e4c-40b7-85f3-524b2a17e224">
+      <Output>
+        <DebugTrace>DateTime 10/15/2012 7:23:57 AM, Request=http://pubsub.pubnub.com/publish/demo/demo/0/my_channel/0/%22Pubnub%20API%20Usage%20Example%22
+DateTime 10/15/2012 7:23:59 AM, JSON=[1,"Sent","13502660400194382"]
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -15,306 +15,76 @@ namespace PubNub_Messaging
                     "",
                     "",
                     false);
-        static public string channel = "hello_world";
+        static public string channel = "my_channel";
         static public string message = "Pubnub API Usage Example - Publish";
 
         static public void Main()
         {
+            Console.WriteLine("ENTER Channel Name");
+            channel = Console.ReadLine();
 
-            //Console.WriteLine("\nRunning publish()");
-            //Publish_Example();
+            Console.WriteLine(string.Format("Channel = {0}",channel));
+            Console.WriteLine();
 
-            //Console.WriteLine("\nRunning detailedHistory()");
-            //DetailedHistory_Example();
+            Console.WriteLine("ENTER 1 FOR Subscribe");
+            Console.WriteLine("ENTER 2 FOR Publish");
+            Console.WriteLine("ENTER 3 FOR Presence");
+            Console.WriteLine("ENTER 4 FOR Detailed History");
+            Console.WriteLine("ENTER 5 FOR Here_Now");
+            Console.WriteLine("ENTER 6 FOR Unsubscribe");
+            Console.WriteLine("ENTER 7 FOR Presence-Unsubscribe");
+            Console.WriteLine("ENTER 0 FOR EXIT OR QUIT");
 
-            //Console.WriteLine("\nRunning detailedHistory()");
-            //DetailedHistory_Decrypted_Example();
+            bool exitFlag = false;
 
-            //Console.WriteLine("\nRunning timestamp()");
-            //Timestamp_Example();
+            Console.WriteLine("");
+            while (!exitFlag)
+            {
+                string userinput = Console.ReadLine();
+                switch (userinput)
+                {
+                    case "0":
+                        exitFlag = true;
+                        break;
+                    case "1":
+                        Console.WriteLine("Running subscribe()");
+                        pubnub.subscribe(channel, DisplayReturnMessage);
+                        break;
+                    case "2":
+                        Console.WriteLine("Running publish()");
+                        Console.WriteLine("Enter the message for publish. To exit loop, enter QUIT");
+                        string publishMsg = Console.ReadLine();
+                        pubnub.publish(channel, publishMsg, DisplayReturnMessage);
+                        break;
+                    case "3":
+                        Console.WriteLine("Running presence()");
+                        pubnub.presence(channel, DisplayReturnMessage);
+                        break;
+                    case "4":
+                        Console.WriteLine("Running detailed history()");
+                        pubnub.detailedHistory(channel, 100, DisplayReturnMessage);
+                        break;
+                    case "5":
+                        Console.WriteLine("Running Here_Now()");
+                        pubnub.here_now(channel, DisplayReturnMessage);
+                        break;
+                    case "6":
+                        Console.WriteLine("Running unsubscribe()");
+                        pubnub.unsubscribe(channel, DisplayReturnMessage);
+                        break;
+                    case "7":
+                        Console.WriteLine("Running presence-unsubscribe()");
+                        pubnub.presence_unsubscribe(channel, DisplayReturnMessage);
+                        break;
+                    default:
+                        Console.WriteLine("INVALID CHOICE.");
+                        break;
+                }
+            }
 
-            //Console.WriteLine("\nRunning here_now()");
-            //HereNow_Example();
-
-            //Console.WriteLine("\nRunning presence()");
-            //Presence_Example();
-
-            //Console.WriteLine("\nRunning timestamp()");
-            //Subscribe_Example();
-
-            //Console.WriteLine("\nRunning history()");
-            //History_Example();
-
-            //Console.WriteLine("\nRunning TestUnencryptedHistory()");
-            //TestUnencryptedHistory();
-
-            //Console.WriteLine("\nRunning TestEncryptedHistory()");
-            //TestEncryptedHistory();
-
-            //Console.WriteLine("\nRunning TestUnencryptedDetailedHistory()");
-            //TestUnencryptedDetailedHistory();
-            
-            //Console.WriteLine("\nRunning TestEncryptedDetailedHistory()");
-            //TestEncryptedDetailedHistory();
-
-            //Console.WriteLine("\nRunning TestUnencryptedDetailedHistoryParams()");
-            //TestUnencryptedDetailedHistoryParams();
-
-            Console.WriteLine("\nRunning TestEncryptedDetailedHistoryParams()");
-            TestEncryptedDetailedHistoryParams();
-
-            Console.WriteLine("\nPress any key to exit when done with demo.\n\n");
+            Console.WriteLine("\nPress any key to confirm exit.\n\n");
             Console.ReadLine();
 
-        }
-        static void TestUnencryptedHistory()
-        {
-            pubnub.CIPHER_KEY = "";
-            pubnub.PropertyChanged += delegate(object sender, PropertyChangedEventArgs e)
-            {
-                if (e.PropertyName == "Publish")
-                {
-                    Console.WriteLine("\n*********** Publish Messages *********** ");
-                    Console.WriteLine(
-                        "Publish Success: " + ((Pubnub)sender).Publish[0].ToString() +
-                        "\nPublish Info: " + ((Pubnub)sender).Publish[1].ToString()
-                        );
-                }
-
-                if (e.PropertyName == "History")
-                {
-                    Console.WriteLine("\n*********** History Messages *********** ");
-                    MessageFeeder(((Pubnub)sender).History);
-                }
-            };
-            pubnub.publish(channel, message);
-            pubnub.history(channel, 1);
-        }
-
-        static void TestEncryptedHistory()
-        {
-            pubnub.CIPHER_KEY = "enigma";
-            pubnub.PropertyChanged += delegate(object sender, PropertyChangedEventArgs e)
-            {
-                if (e.PropertyName == "Publish")
-                {
-                    Console.WriteLine("\n*********** Publish Messages *********** ");
-                    Console.WriteLine(
-                        "Publish Success: " + ((Pubnub)sender).Publish[0].ToString() +
-                        "\nPublish Info: " + ((Pubnub)sender).Publish[1].ToString()
-                        );
-                }
-
-                if (e.PropertyName == "History")
-                {
-                    Console.WriteLine("\n*********** History Messages *********** ");
-                    MessageFeeder(((Pubnub)sender).History);
-                }
-            };
-            pubnub.publish(channel, message);
-            pubnub.history(channel, 1);
-        }
-
-        static void TestUnencryptedDetailedHistory()
-        {
-            // Context setup for Detailed History
-            pubnub.CIPHER_KEY = "";
-            int total_msg = 10;
-            long starttime = Timestamp();
-            Dictionary<long, string> inputs = new Dictionary<long,string>();
-            for (int i = 0; i < total_msg / 2; i++)
-            {
-                string msg = i.ToString();
-                pubnub.publish(channel, msg);
-                long t = Timestamp();
-                inputs.Add(t, msg);
-                Console.WriteLine("Message # " + i.ToString() + " published");
-            }
-
-            long midtime = Timestamp();
-            for (int i = total_msg / 2; i < total_msg; i++)
-            {
-                string msg = i.ToString();
-                pubnub.publish(channel, msg);
-                long t = Timestamp();
-                inputs.Add(t, msg);
-                Console.WriteLine("Message # " + i.ToString() + " published");
-            }
-
-            long endtime = Timestamp();
-
-            deliveryStatus = false;
-            pubnub.PropertyChanged += delegate(object sender, PropertyChangedEventArgs e)
-            {
-                if (e.PropertyName == "DetailedHistory")
-                {
-                    Console.WriteLine("\n*********** DetailedHistory Messages *********** ");
-                    foreach (object msg_org in (object[])((Pubnub)sender).DetailedHistory)
-                    {
-                        Console.WriteLine(msg_org.ToString());
-                    }
-                    deliveryStatus = true;
-                }
-            };
-            pubnub.detailedHistory(channel, total_msg);
-            while (!deliveryStatus) ;
-            Console.WriteLine("\n******* DetailedHistory Messages Received ******* ");
-        }
-
-        static void TestEncryptedDetailedHistory()
-        {
-            // Context setup for Detailed History
-            pubnub.CIPHER_KEY = "enigma";
-            int total_msg = 10;
-            long starttime = Timestamp();
-            Dictionary<long, string> inputs = new Dictionary<long, string>();
-            for (int i = 0; i < total_msg / 2; i++)
-            {
-                string msg = i.ToString();
-                pubnub.publish(channel, msg);
-                long t = Timestamp();
-                inputs.Add(t, msg);
-                Console.WriteLine("Message # " + i.ToString() + " published");
-            }
-
-            long midtime = Timestamp();
-            for (int i = total_msg / 2; i < total_msg; i++)
-            {
-                string msg = i.ToString();
-                pubnub.publish(channel, msg);
-                long t = Timestamp();
-                inputs.Add(t, msg);
-                Console.WriteLine("Message # " + i.ToString() + " published");
-            }
-
-            long endtime = Timestamp();
-
-            deliveryStatus = false;
-            pubnub.PropertyChanged += delegate(object sender, PropertyChangedEventArgs e)
-            {
-                if (e.PropertyName == "DetailedHistory")
-                {
-                    Console.WriteLine("\n*********** DetailedHistory Messages *********** ");
-                    foreach (object msg_org in (List<object>)((Pubnub)sender).DetailedHistory)
-                    {
-                        Console.WriteLine(msg_org.ToString());
-                    }
-                    deliveryStatus = true;
-                }
-            };
-            pubnub.detailedHistory(channel, total_msg);
-            while (!deliveryStatus) ;
-            Console.WriteLine("\n*********** DetailedHistory Messages Received*********** ");
-        }
-
-        static void TestUnencryptedDetailedHistoryParams()
-        {
-            // Context setup for Detailed History
-            pubnub.CIPHER_KEY = "";
-            int total_msg = 10;
-            long starttime = Timestamp();
-            Dictionary<long, string> inputs = new Dictionary<long, string>();
-            for (int i = 0; i < total_msg / 2; i++)
-            {
-                string msg = i.ToString();
-                pubnub.publish(channel, msg);
-                long t = Timestamp();
-                inputs.Add(t, msg);
-                Console.WriteLine("Message # " + i.ToString() + " published");
-            }
-
-            long midtime = Timestamp();
-            for (int i = total_msg / 2; i < total_msg; i++)
-            {
-                string msg = i.ToString();
-                pubnub.publish(channel, msg);
-                long t = Timestamp();
-                inputs.Add(t, msg);
-                Console.WriteLine("Message # " + i.ToString() + " published");
-            }
-
-            long endtime = Timestamp();
-
-            deliveryStatus = false;
-            pubnub.PropertyChanged += delegate(object sender, PropertyChangedEventArgs e)
-            {
-                if (e.PropertyName == "DetailedHistory")
-                {
-                    Console.WriteLine("\n*********** DetailedHistory Messages *********** ");
-                    foreach (object msg_org in (object[])((Pubnub)sender).DetailedHistory)
-                    {
-                        Console.WriteLine(msg_org.ToString());
-                    }
-                    deliveryStatus = true;
-                }
-            };
-            Console.WriteLine("DetailedHistory with start & end");
-            pubnub.detailedHistory(channel, starttime, midtime, total_msg / 2, true);
-            while (!deliveryStatus) ;
-            Console.WriteLine("DetailedHistory with start & reverse = true");
-            deliveryStatus = false;
-            pubnub.detailedHistory(channel, midtime, -1, total_msg / 2, true);
-            while (!deliveryStatus) ;
-            Console.WriteLine("DetailedHistory with start & reverse = false");
-            deliveryStatus = false;
-            pubnub.detailedHistory(channel, midtime, -1, total_msg / 2, false);
-            while (!deliveryStatus) ;
-            Console.WriteLine("\n******* DetailedHistory Messages Received ******* ");
-        }
-
-        static void TestEncryptedDetailedHistoryParams()
-        {
-            // Context setup for Detailed History
-            pubnub.CIPHER_KEY = "enigma";
-            int total_msg = 10;
-            long starttime = Timestamp();
-            Dictionary<long, string> inputs = new Dictionary<long, string>();
-            for (int i = 0; i < total_msg / 2; i++)
-            {
-                string msg = i.ToString();
-                pubnub.publish(channel, msg);
-                long t = Timestamp();
-                inputs.Add(t, msg);
-                Console.WriteLine("Message # " + i.ToString() + " published");
-            }
-
-            long midtime = Timestamp();
-            for (int i = total_msg / 2; i < total_msg; i++)
-            {
-                string msg = i.ToString();
-                pubnub.publish(channel, msg);
-                long t = Timestamp();
-                inputs.Add(t, msg);
-                Console.WriteLine("Message # " + i.ToString() + " published");
-            }
-
-            long endtime = Timestamp();
-
-            deliveryStatus = false;
-            pubnub.PropertyChanged += delegate(object sender, PropertyChangedEventArgs e)
-            {
-                if (e.PropertyName == "DetailedHistory")
-                {
-                    Console.WriteLine("\n*********** DetailedHistory Messages *********** ");
-                    foreach (object msg_org in (List<object>)((Pubnub)sender).DetailedHistory)
-                    {
-                        Console.WriteLine(msg_org.ToString());
-                    }
-                    deliveryStatus = true;
-                }
-            };
-            Console.WriteLine("DetailedHistory with start & end");
-            pubnub.detailedHistory(channel, starttime, midtime, total_msg / 2, true);
-            while (!deliveryStatus) ;
-            Console.WriteLine("DetailedHistory with start & reverse = true");
-            deliveryStatus = false;
-            pubnub.detailedHistory(channel, midtime, -1, total_msg / 2, true);
-            while (!deliveryStatus) ;
-            Console.WriteLine("DetailedHistory with start & reverse = false");
-            deliveryStatus = false;
-            pubnub.detailedHistory(channel, midtime, -1, total_msg / 2, false);
-            while (!deliveryStatus) ;
-            Console.WriteLine("\n******* DetailedHistory Messages Received ******* ");
         }
 
         static long Timestamp()
@@ -331,156 +101,71 @@ namespace PubNub_Messaging
             while (!deliveryStatus) ;
             return Convert.ToInt64(pubnub.Time[0].ToString());
         }
-        static void Publish_Example()
+
+        static void DisplayReturnMessage(object result)
         {
-            pubnub.CIPHER_KEY = "";
-            pubnub.PropertyChanged += delegate(object sender, PropertyChangedEventArgs e)
+            IList<object> message = result as IList<object>;
+
+            if (message != null && message.Count >= 2)
             {
-                if (e.PropertyName == "Publish")
+                for (int index = 0; index < message.Count; index++)
                 {
-                    Console.WriteLine("\n*********** Publish Messages *********** ");
-                    Console.WriteLine(
-                        "Publish Success: " + ((Pubnub)sender).Publish[0].ToString() +
-                        "\nPublish Info: " + ((Pubnub)sender).Publish[1].ToString()
-                        );
+                    ParseObject(message[index], 1);
                 }
-            };
-            pubnub.publish(channel, message);
-        }
-        
-        static void DetailedHistory_Example()
-        {
-            pubnub.CIPHER_KEY = "";
-            //int start = 
-            pubnub.PropertyChanged += delegate(object sender, PropertyChangedEventArgs e)
+            }
+            else
             {
-                if (e.PropertyName == "DetailedHistory")
-                {
-                    Console.WriteLine("\n*********** DetailedHistory Messages *********** ");
-                    MessageFeeder(((Pubnub)sender).DetailedHistory);
-                    deliveryStatus = true;
-                }
-            };
-            pubnub.detailedHistory(channel, 10);
-            while (!deliveryStatus) ;
-            Console.WriteLine("\n*********** DetailedHistory Messages Received*********** ");
+                Console.WriteLine("unable to parse data");
+            }
         }
 
-        static void DetailedHistory_Decrypted_Example()
+        static void ParseObject(object result, int loop)
         {
-            pubnub.CIPHER_KEY = "enigma";
-            //int start = 
-            pubnub.PropertyChanged += delegate(object sender, PropertyChangedEventArgs e)
+            if (result is object[])
             {
-                if (e.PropertyName == "DetailedHistory")
+                object[] arrResult = (object[])result;
+                foreach (object item in arrResult)
                 {
-                    Console.WriteLine("\n*********** DetailedHistory Messages *********** ");
-                    MessageFeeder((List<object>)(((Pubnub)sender).DetailedHistory));
-                    deliveryStatus = true;
-                }
-            };
-            pubnub.detailedHistory(channel, 1);
-            while (!deliveryStatus) ;
-            Console.WriteLine("\n*********** DetailedHistory Messages Received*********** ");
-        }
-
-        static void Timestamp_Example()
-        {
-            pubnub.CIPHER_KEY = "";
-            pubnub.PropertyChanged += delegate(object sender, PropertyChangedEventArgs e)
-            {
-                if (e.PropertyName == "Time")
-                {
-                    Console.WriteLine("\n********** Timestamp Messages ********** ");
-                    MessageFeeder(((Pubnub)sender).Time[0]);
-                }
-            };
-            pubnub.time();
-        }
-        static void Subscribe_Example()
-        {
-            pubnub.CIPHER_KEY = "";
-            pubnub.PropertyChanged += delegate(object sender, PropertyChangedEventArgs e)
-            {
-                if (e.PropertyName == "ReturnMessage")
-                {
-                    Console.WriteLine("\n********** Subscribe Messages ********** ");
-                    MessageFeeder(((Pubnub)sender).ReturnMessage);
-                }
-            };
-            pubnub.subscribe(channel);
-        }
-
-        static void Presence_Example()
-        {
-            pubnub.CIPHER_KEY = "";
-            pubnub.PropertyChanged += delegate(object sender, PropertyChangedEventArgs e)
-            {
-                if (e.PropertyName == "ReturnMessage")
-                {
-                    Console.WriteLine("\n********** Presence Messages ********** ");
-                    MessageFeeder(((Pubnub)sender).ReturnMessage);
-                }
-            };
-            pubnub.presence(channel);
-        }
-
-        static void HereNow_Example()
-        {
-            pubnub.CIPHER_KEY = "";
-            pubnub.PropertyChanged += delegate(object sender, PropertyChangedEventArgs e)
-            {
-                if (e.PropertyName == "Here_Now")
-                {
-                    Console.WriteLine("\n********** Here Now Messages *********** ");
-                    Dictionary<string, object> _message = (Dictionary<string, object>)(((Pubnub)sender).Here_Now[0]);
-                    foreach (object uuid in (object[])_message["uuids"])
+                    if (!item.GetType().IsGenericType)
                     {
-                        Console.WriteLine("UUID: " + uuid.ToString());
+                        if (!item.GetType().IsArray)
+                        {
+                            Console.WriteLine(item.ToString());
+                        }
+                        else
+                        {
+                            ParseObject(item, loop + 1);
+                        }
                     }
-                    Console.WriteLine("Occupancy: " + _message["occupancy"].ToString());
+                    else
+                    {
+                        ParseObject(item, loop + 1);
+                    }
                 }
-            };
-            pubnub.here_now(channel);
+            }
+            else if (result.GetType().IsGenericType && (result.GetType().Name == typeof(Dictionary<,>).Name))
+            {
+                Dictionary<string, object> itemList = (Dictionary<string, object>)result;
+                foreach (KeyValuePair<string, object> pair in itemList)
+                {
+                    Console.WriteLine(string.Format("key = {0}", pair.Key));
+                    if (pair.Value is object[])
+                    {
+                        Console.WriteLine("value = ");
+                        ParseObject(pair.Value, loop);
+                    }
+                    else
+                    {
+                        Console.WriteLine(string.Format("value = {0}", pair.Value));
+                    }
+                }
+            }
+            else
+            {
+                Console.WriteLine(result.ToString());
+            }
+
         }
 
-        static void MessageFeeder(List<object> feed)
-        {
-            foreach (object message in feed)
-            {
-                try
-                {
-                    Dictionary<string, object> _messageHistory = (Dictionary<string, object>)(message);
-                    Console.WriteLine("Key: " + _messageHistory.ElementAt(0).Key + " - Value: " + _messageHistory.ElementAt(0).Value);
-                }
-                catch
-                {
-                    Console.WriteLine(message.ToString());
-                }
-            }
-        }
-        static void MessageFeeder(object feed)
-        {
-            try
-            {
-                Dictionary<string, object> _message = (Dictionary<string, object>)(feed);
-                for (int i = 0; i < _message.Count; i ++)
-                    Console.WriteLine("Key: " + _message.ElementAt(i).Key + " - Value: " + _message.ElementAt(i).Value);
-            }
-            catch
-            {
-                try
-                {
-                    List<object> _message = (List<object>)feed;
-                    for (int i = 0; i < _message.Count; i++)
-                        Console.WriteLine(_message[i].ToString());
-                }
-                catch
-                {
-                    Console.WriteLine("Time: " + feed.ToString());
-                }
-                
-            }
-        }
     }
 }

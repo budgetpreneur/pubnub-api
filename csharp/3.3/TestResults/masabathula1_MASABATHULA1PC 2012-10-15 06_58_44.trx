@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="700003c8-43f7-4ab6-af5f-a1d6e7301846" name="masabathula1@MASABATHULA1PC 2012-10-15 06:58:44" runUser="MASABATHULA1PC\masabathula1" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="981faf14-b0b5-47c9-bd84-76715319ec09">
+    <Deployment runDeploymentRoot="masabathula1_MASABATHULA1PC 2012-10-15 06_58_44">
+      <DeploymentItem filename="C:\Pandu\GitHub\pubnub-api\csharp\3.3\PubNub-Messaging\bin\Debug\PubNub-Messaging.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-10-15T06:58:44.3885700+05:30" queuing="2012-10-15T06:58:45.7613724+05:30" start="2012-10-15T06:58:45.9173727+05:30" finish="2012-10-15T06:58:59.0681958+05:30" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ThenItShouldReturnReceivedMessage" storage="c:\pandu\github\pubnub-api\csharp\3.3\pubnub-messaging.tests\bin\debug\pubnub-messaging.tests.dll" id="aa5ae936-4b91-7628-df52-dad043c5d2d0">
+      <Execution id="d94fafb3-d3eb-4246-9783-788124e3bd53" />
+      <TestMethod codeBase="C:/Pandu/GitHub/pubnub-api/csharp/3.3/PubNub-Messaging.Tests/bin/Debug/PubNub-Messaging.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PubNub_Messaging.Tests.WhenSubscribedToAChannel, PubNub-Messaging.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ThenItShouldReturnReceivedMessage" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="aa5ae936-4b91-7628-df52-dad043c5d2d0" executionId="d94fafb3-d3eb-4246-9783-788124e3bd53" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="d94fafb3-d3eb-4246-9783-788124e3bd53" testId="aa5ae936-4b91-7628-df52-dad043c5d2d0" testName="ThenItShouldReturnReceivedMessage" computerName="MASABATHULA1PC" duration="00:00:11.1062463" startTime="2012-10-15T06:58:46.0889730+05:30" endTime="2012-10-15T06:58:58.9745956+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d94fafb3-d3eb-4246-9783-788124e3bd53">
+      <Output>
+        <DebugTrace>DateTime 10/15/2012 6:58:48 AM, requested subscribe for channel=my_channel
+DateTime 10/15/2012 6:58:48 AM, Request=http://pubsub.pubnub.com/subscribe/demo/my_channel/0/0?uuid=7d60905f-9514-4336-97d5-cab22d6f4913
+DateTime 10/15/2012 6:58:49 AM, JSON=[[],"13502638873595396"]
+DateTime 10/15/2012 6:58:49 AM, Request=http://pubsub.pubnub.com/subscribe/demo/my_channel/0/13502638873595396?uuid=7d60905f-9514-4336-97d5-cab22d6f4913
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

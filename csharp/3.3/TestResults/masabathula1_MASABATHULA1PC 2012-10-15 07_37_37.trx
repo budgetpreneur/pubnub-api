@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="9f0383ae-12c8-4267-b3e3-22f6945d4f88" name="masabathula1@MASABATHULA1PC 2012-10-15 07:37:37" runUser="MASABATHULA1PC\masabathula1" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="068d8081-eabb-415b-8801-8ed2b129f362">
+    <Deployment runDeploymentRoot="masabathula1_MASABATHULA1PC 2012-10-15 07_37_37">
+      <DeploymentItem filename="C:\Pandu\GitHub\pubnub-api\csharp\3.3\PubNub-Messaging\bin\Debug\PubNub-Messaging.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-10-15T07:37:37.5263678+05:30" queuing="2012-10-15T07:37:38.2595691+05:30" start="2012-10-15T07:37:38.2907691+05:30" finish="2012-10-15T07:37:40.7087734+05:30" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ThenSecretKeyShouldBeProvidedOptionally" storage="c:\pandu\github\pubnub-api\csharp\3.3\pubnub-messaging.tests\bin\debug\pubnub-messaging.tests.dll" id="f5c7c269-651b-f04d-a925-f9349b8cba4e">
+      <Execution id="6fc7ce57-520e-4a60-a9d1-a4205938b836" />
+      <TestMethod codeBase="C:/Pandu/GitHub/pubnub-api/csharp/3.3/PubNub-Messaging.Tests/bin/Debug/PubNub-Messaging.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PubNub_Messaging.Tests.WhenAMessageIsPublished, PubNub-Messaging.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ThenSecretKeyShouldBeProvidedOptionally" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="f5c7c269-651b-f04d-a925-f9349b8cba4e" executionId="6fc7ce57-520e-4a60-a9d1-a4205938b836" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="6fc7ce57-520e-4a60-a9d1-a4205938b836" testId="f5c7c269-651b-f04d-a925-f9349b8cba4e" testName="ThenSecretKeyShouldBeProvidedOptionally" computerName="MASABATHULA1PC" duration="00:00:02.0286405" startTime="2012-10-15T07:37:38.2907691+05:30" endTime="2012-10-15T07:37:40.6931733+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6fc7ce57-520e-4a60-a9d1-a4205938b836">
+      <Output>
+        <DebugTrace>DateTime 10/15/2012 7:37:38 AM, Request=http://pubsub.pubnub.com/publish/demo/demo/0/my%2Fchannel/0/%22Pubnub%20API%20Usage%20Example%22
+DateTime 10/15/2012 7:37:39 AM, JSON=[1,"Sent","13502668603035942"]
+DateTime 10/15/2012 7:37:39 AM, Request=http://pubsub.pubnub.com/publish/demo/demo/d759c756abbd45a9864adc7f2b91393e/my%2Fchannel/0/%22Pubnub%20API%20Usage%20Example%22
+DateTime 10/15/2012 7:37:39 AM, JSON=[1,"Sent","13502668605638686"]
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

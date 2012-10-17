@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="d28778d6-2c22-4d6a-a373-d2443d90b0a0" name="masabathula1@MASABATHULA1PC 2012-10-16 16:39:22" runUser="MASABATHULA1PC\masabathula1" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="98cae13d-9cdf-452b-aabe-66798bfefda9">
+    <Deployment runDeploymentRoot="masabathula1_MASABATHULA1PC 2012-10-16 16_39_22">
+      <DeploymentItem filename="C:\Pandu\GitHub\pubnub-api\csharp\3.3\PubNub-Messaging\bin\Debug\PubNub-Messaging.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-10-16T16:39:22.0414178+05:30" queuing="2012-10-16T16:39:24.3034218+05:30" start="2012-10-16T16:39:24.4594220+05:30" finish="2012-10-16T16:39:38.7869029+05:30" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ItShouldReturnDetailedHistory" storage="c:\pandu\github\pubnub-api\csharp\3.3\pubnub-messaging.tests\bin\debug\pubnub-messaging.tests.dll" id="b66377bc-5933-58f6-5165-6957609092f9">
+      <Execution id="56e2cbda-1126-4488-81a1-6558b0160968" />
+      <TestMethod codeBase="C:/Pandu/GitHub/pubnub-api/csharp/3.3/PubNub-Messaging.Tests/bin/Debug/PubNub-Messaging.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PubNub_Messaging.Tests.WhenDetailedHistoryIsRequested, PubNub-Messaging.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ItShouldReturnDetailedHistory" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="b66377bc-5933-58f6-5165-6957609092f9" executionId="56e2cbda-1126-4488-81a1-6558b0160968" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="56e2cbda-1126-4488-81a1-6558b0160968" testId="b66377bc-5933-58f6-5165-6957609092f9" testName="ItShouldReturnDetailedHistory" computerName="MASABATHULA1PC" duration="00:00:11.9870393" startTime="2012-10-16T16:39:24.6778224+05:30" endTime="2012-10-16T16:39:38.5217025+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="56e2cbda-1126-4488-81a1-6558b0160968">
+      <Output>
+        <DebugTrace>DateTime 10/16/2012 4:39:37 PM, Request=http://pubsub.pubnub.com/v2/history/sub-key/demo/channel/my_channel?count=100
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
